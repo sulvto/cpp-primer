@@ -1,0 +1,8 @@
+/.idea
+
+// Compiled Object files
+*.o
+
+
+// vim
+*.swp
