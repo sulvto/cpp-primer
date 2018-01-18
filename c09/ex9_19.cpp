@@ -10,15 +10,15 @@ using std::string;
 int main() {
 	
 	string word;
-	list<string> deq;
+	list<string> li;
 	while (cin >> word) {
 		cout << "push:" << word << "\n" << endl;
-		deq.push_back(word);
+		li.push_back(word);
 	}
 	
 	cout << "output: ";
-	auto begin = deq.begin();
-	auto end = deq.end();
+	auto begin = li.begin();
+	auto end = li.end();
 	while (begin != end) {
 		cout << *begin << " ";
 		++begin;
