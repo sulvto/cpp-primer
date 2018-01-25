@@ -18,14 +18,11 @@ void print(list<string> &words) {
 
 
 void elimDups(list<string> &words) {
-	sort(words.begin(), words.end());
+	words.sort();
 	cout << "sort:" << endl;
 	print(words);
-	auto end_unique = unique(words.begin(), words.end());
+	words.unique();
 	cout << "unique:" << endl;
-	print(words);
-	words.erase(end_unique, words.end());
-	cout << "erase:" << endl;
 	print(words);
 }
 
