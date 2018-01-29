@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <utility>
 
 using std::cin;
 using std::cout;
@@ -10,6 +11,7 @@ using std::endl;
 using std::string;
 using std::vector;
 using std::multimap;
+using std::pair;
 
 int main() {
 	string word;
@@ -20,11 +22,11 @@ int main() {
 		map.erase("a");
 	}
 
-	for_each(map.cbegin(), man.cend(), [](const pair<string, string> &p) { cout << "<" << p.first << ":" << p.second << ">"; });
+	for_each(map.cbegin(), map.cend(), [](const pair<string, string> &p) { cout << "<" << p.first << ":" << p.second << ">"; });
 	cout << endl;
 	if (map.find("c") != map.end()) {
 		map.erase("c");              
 	}
-	for_each(map.cbegin(), man.cend(), [](const pair<string, string> &p) { cout << "<" << p.first << ":" << p.second << ">"; });
+	for_each(map.cbegin(), map.cend(), [](const pair<string, string> &p) { cout << "<" << p.first << ":" << p.second << ">"; });
 	cout << endl;
 }
