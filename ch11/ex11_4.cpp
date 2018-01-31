@@ -14,8 +14,10 @@ int main() {
 	string word;
 	map<string, size_t> word_count;
 	while (cin >> word) {
-    	transform(word.begin(), word.end(), word.begin(), toupper);  	
-		++word_count[word];
+    	transform(word.begin(), word.end(), word.begin(), tolower);  
+		string newWord;
+		remove_copy_if(word.begin(), word.end(), back_inserter(newWord), ispunct);
+		++word_count[newWord];
 	}
 
 	// print
