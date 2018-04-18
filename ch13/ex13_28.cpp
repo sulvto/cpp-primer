@@ -8,10 +8,17 @@ public:
 
 	TreeNode(): count(0), left(nullptr), right(nullptr) {}
 
-	TreeNode(const string &v): value(v), count(0), left(nullptr), right(nullptr)	{}
+	TreeNode(const string &v): value(v), count(0), left(nullptr), right(nullptr)	{
+		// count ??
+	}
 
 	TreeNode(const TreeNode &tn): value(tn.value), count(tn.count), 
-		left(tn.left), right(tn.right)  {}
+		left(tn.left), right(tn.right)  {
+			// count ??
+		}
+
+
+
 
 	~TreeNode();
 
