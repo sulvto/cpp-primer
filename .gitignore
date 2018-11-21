@@ -2,7 +2,7 @@
 
 // Compiled Object files
 *.o
-
+*.out
 
 // vim
 *.swp

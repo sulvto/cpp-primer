@@ -43,8 +43,8 @@ Sales_data::Sales_data(std::istream &is) {
 }
 
 double Sales_data::avg_price() const {
-	if(units_sold) {
-		return revenue/units_sold;
+	if (units_sold) {
+		return revenue / units_sold;
 	} else {
 		return 0;	
 	}
